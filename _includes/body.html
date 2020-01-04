@@ -16,8 +16,20 @@
   </div>
 </header>
 <div class="main_content">
-<h1>{{ page.title }}</h1>
-{{ page.content }}
+  <div class="article_header">
+    <h1>{{ page.title }}</h1>
+  </div>
+<div class="article_info_bar">
+  <ul class="right_col">
+    <li>
+      <i class="far fa-calendar-alt"></i>
+      <span> {{ page.date | date_to_string: "ordinal", "US" }} </span>
+    </li>
+  </ul>
+</div>
+  <div class="article-content">
+  {{ page.content }}
+  </div>
 </div>
 <div class="separation">
 <hr>

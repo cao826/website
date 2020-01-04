@@ -93,6 +93,30 @@ nav a:hover::before {
   margin-right: 10%;
 }
 
+.article_header{
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.article_info_bar{
+    font-size: 0.85rem;
+    color: #888;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2px;
+}
+
+.right_col{
+  float: right;
+    margin-left: 0.5rem;
+}
+
+.article-content{
+  padding: 1rem;
+}
+
 .separation{
   padding: 10px;
   width: 80%;
