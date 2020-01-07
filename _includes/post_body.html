@@ -32,6 +32,14 @@
   </div>
   <div class="separation">
   <hr>
+  <div class="related_posts">
+    <h2>Related Posts</h2>
+    <ul class="rel_posts">
+    {% for post in site.related_posts limit:2 %}
+    <a href="{{ post.permalink }}"><li> {{ post.title }} </li></a>
+    {% endfor %}
+    </ul>
+  </div>
   </div>
 </div>
 {% include footer.html %}

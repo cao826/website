@@ -122,11 +122,24 @@ nav a:hover::before {
   width: 80%;
   margin-left: 9%;
   margin-right: 11%;
+  text-align: right;
+  display: block;
 }
 
 .separation hr{
   border: 2px solid #F2F2F2;
   border-radius: 2px;
+}
+
+.related_posts{
+  margin-right: 0px;
+  margin-left: 60%;
+  text-align: right;
+}
+
+.related_posts h2{
+  text-align: right;
+  color: #888;
 }
 
 #footer {
