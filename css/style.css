@@ -113,10 +113,11 @@ nav a:hover::before {
     margin-left: 0.5rem;
 }
 
+/*
 .article-content{
   padding: 1rem;
 }
-
+*/
 .separation{
   padding: 10px;
   width: 80%;
