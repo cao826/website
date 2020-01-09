@@ -21,8 +21,8 @@ $$
 \int_{0}^{\frac{1}{1000}} f_{\sin(X)}(\tau ) \, d\tau.
 $$
 
-So it will suffice to find the pdf of our new random variable and perform the integration above. Denote $ \sin ( X ) = Y $ and note that on the set
-\( [0, \frac{1}{1000}] \),
+So it will suffice to find the pdf of our new random variable and perform the integration above. Denote \\( \sin ( X ) = Y \\) and note that on the set
+\\( [0, \frac{1}{1000}] \\),
 \\( \sin \\)
 is a strictly monotone function. We can then apply the non-linear change of variables formula presented in lecture to get that
 
