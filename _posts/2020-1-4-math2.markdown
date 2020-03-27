@@ -5,7 +5,7 @@ date: 2020-1-4
 categories: ["mathematics", "probability theory"]
 permalink: "/math-test-2"
 ---
-
+## Disclaimer: This is a dummy post
 
 Denote the survivors at time step 1 by
 \\(S_n\\).
