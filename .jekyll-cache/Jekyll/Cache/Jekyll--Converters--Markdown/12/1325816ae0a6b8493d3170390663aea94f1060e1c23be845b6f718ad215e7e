@@ -1,4 +1,6 @@
-I"û<p>Denote the survivors at time step 1 by
+I"’<h2 id="disclaimer-this-is-a-dummy-post">Disclaimer: This is a dummy post</h2>
+
+<p>Denote the survivors at time step 1 by
 \(S_n\).
  We wish to find
  \( \mathbb{P} (S_n = k ) \).</p>
@@ -13,4 +15,11 @@
     &= e^{-\mu} \frac{((1-p)\mu)^k}{k!} e^{p \mu }\\
     &= e^{\mu ( 1 - p ) } \frac{((1-p)\mu)^k}{k!}
 \end{align*} %]]></script>
+
+<ol>
+  <li>This</li>
+  <li>is</li>
+  <li>a</li>
+  <li>test</li>
+</ol>
 :ET
