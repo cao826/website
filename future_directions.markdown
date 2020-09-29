@@ -4,4 +4,4 @@ title: "Future Directions"
 permalink: "/future"
 ---
 
-Dummy post.
+Dummy post. Here is another sentence.

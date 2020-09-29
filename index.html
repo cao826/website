@@ -21,4 +21,13 @@ date: 2020-1-4
 		and clean up the post layout.
 		These posts will not contain any substantial content and you can ignore
 		them.
-		</p>
+		<center> <h1> Latest Posts </h1> </center>
+
+<ul>
+  {% for post in site.posts limit:2 %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.content }}
+    </li>
+  {% endfor %}
+</ul>
