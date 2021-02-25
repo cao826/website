@@ -1,0 +1,18 @@
+I",<h2 id="disclaimer-this-is-a-dummy-post">Disclaimer: This is a dummy post</h2>
+
+<p>Denote the survivors at time step 1 by
+\(S_n\).
+ We wish to find
+ \( \mathbb{P} (S_n = k ) \).</p>
+
+\[\begin{align*}
+    \mathbb{P} ( S_n = k ) &amp;= \sum_{i = k }^{\infty} e^{-\mu} \frac{\mu^{i}}{i!} \binom{i}{k} (p)^{i-k}(p)^k \\
+    &amp;= e^{-\mu} \sum_{i = k }^{\infty } \frac{\mu^i}{i!} \frac{i!}{k! ( i - k )!} (p)^{i - k } (1-p)^k\\
+    &amp;= e^{-\mu} \sum_{i=0}^{\infty} \frac{\mu^{ i + k} (p)^{i } (1-p)^k}{k! i!}\\
+    &amp;= e^{-\mu} \sum_{i=0}^{\infty} \frac{ (p\mu)^i}{i!} \frac{((1-p)\mu)^k}{k!}\\
+    &amp;= e^{-\mu} \frac{((1-p)\mu)^k}{k!} \sum_{i=0}^{\infty} \frac{ (p\mu)^i}{i!}\\
+    &amp;= e^{-\mu} \frac{((1-p)\mu)^k}{k!} e^{p \mu }\\
+    &amp;= e^{\mu ( 1 - p ) } \frac{((1-p)\mu)^k}{k!}
+\end{align*}\]
+
+:ET

@@ -3,12 +3,13 @@
   padding: 0;
   /*list-style: none;*/
   text-decoration: none;
+  color: #3E3E3E;
 }
 
 body {
 	margin: 0;
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;*/
 }
 
 #page-container {
@@ -40,10 +41,14 @@ header::after {
 .logo {
   float: left;
   padding: 20px 0;
+  font-family: "Lato";
+  font-weight: normal;
 }
 
 nav {
   float: right;
+  font-family: "Lato";
+  font-weight: normal;
 }
 
 nav ul {
@@ -96,6 +101,11 @@ nav a:hover::before {
 .article_header{
   margin-top: 3rem;
   margin-bottom: 1.5rem;
+  font-family: "Lato";
+}
+
+.article_header h1{
+    font-weight: normal;
 }
 
 .article_info_bar{
@@ -106,6 +116,13 @@ nav a:hover::before {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 2px;
+}
+
+.article-content{
+    font-family: "Merriweather";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .right_col{
