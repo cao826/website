@@ -1,8 +1,8 @@
-I"Ó<p>Test post</p>
+I"¨<p>Test post</p>
 
 <p>Test again</p>
 
-<script type="math/tex; mode=display">\sum_{i = 0}^{ n } \binom{n}{k}a^{i}b^{n-i}</script>
+\[\sum_{i = 0}^{ n } \binom{n}{k}a^{i}b^{n-i}\]
 
 <h2 id="what-is-this-things-layout">What is this things layout?</h2>
 

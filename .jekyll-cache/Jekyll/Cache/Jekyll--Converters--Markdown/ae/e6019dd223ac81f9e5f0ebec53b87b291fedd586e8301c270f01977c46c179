@@ -1,4 +1,4 @@
-I"è<h2 id="disclaimer-this-is-a-dummy-post">Disclaimer: This is a dummy post</h2>
+I":<h2 id="disclaimer-this-is-a-dummy-post">Disclaimer: This is a dummy post</h2>
 
 <p>The following is an excerpt from my Statistics homework:</p>
 
@@ -6,49 +6,47 @@
 \( \mathbb{P} \big (\sin ( X ) \in [0, \frac{1}{1000}]\big) \)
 , which we can re-write as</p>
 
-<script type="math/tex; mode=display">\mathbb{P} \left ( 0 \leq \sin ( X ) \leq \frac{1}{1000} \right)
+\[\mathbb{P} \left ( 0 \leq \sin ( X ) \leq \frac{1}{1000} \right)
     =
-\int_{0}^{\frac{1}{1000}} f_{\sin(X)}(\tau ) \, d\tau.</script>
+\int_{0}^{\frac{1}{1000}} f_{\sin(X)}(\tau ) \, d\tau.\]
 
 <p>So it will suffice to find the pdf of our new random variable and perform the integration above. Denote \( \sin ( X ) = Y \) and note that on the set
 \( [0, \frac{1}{1000}] \),
 \( \sin \)
 is a strictly monotone function. We can then apply the non-linear change of variables formula presented in lecture to get that</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align*}
+\[\begin{align*}
     f_{Y} ( \tau )
-        &=
+        &amp;=
     \frac{e^{\arcsin(\tau)}}{|\cos( \arcsin(\tau) ) |}\\
-        &=
+        &amp;=
     \frac{e^{\arcsin(\tau)}}
     {\sqrt{\cos^2 ( \arcsin(\tau) ) }} \\
-        &=
+        &amp;=
     \frac{e^{\arcsin(\tau)}}
     {\sqrt{ 1 - \sin^2 ( \arcsin(\tau) ) }}\\
-        &=
+        &amp;=
     \frac{e^{\arcsin(\tau)}}
     {\sqrt{1 - \tau^2}}.
-\end{align*} %]]></script>
+\end{align*}\]
 
 <p>This is good because</p>
 
-<script type="math/tex; mode=display">\frac{d}{d \tau } ( \arcsin(\tau) )
+\[\frac{d}{d \tau } ( \arcsin(\tau) )
 =
-\frac{1}{\sqrt{1 - \tau^2}}</script>
+\frac{1}{\sqrt{1 - \tau^2}}\]
 
 <p>and we can use u-substitution (aka change of variables) to integrate:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align*}
+\[\begin{align*}
     \int_{0}^{\frac{1}{1000}} \frac{e^{\arcsin(\tau)}}
     {\sqrt{1 - \tau^2}} \, d \tau
-        &=
+        &amp;=
     \int_{0}^{\frac{1}{1000}} e^{-u} \, du \\
-        &=
+        &amp;=
     -e^{-\arcsin(x)} |_{\tau = 0}^{\tau=.001}\\
-        &=
+        &amp;=
     1 - e^{-\arcsin(\tau ) }\\
-        &\approx 0.0009995003331251665
-\end{align*} %]]></script>
+        &amp;\approx 0.0009995003331251665
+\end{align*}\]
 :ET
