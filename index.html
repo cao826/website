@@ -3,6 +3,50 @@ layout: default
 title: "This website is still under construction"
 date: 2021-2-25
 ---
-	<p>
-	<script src="https://gist.github.com/cao826/98c86b18c661baf05a86fbae9b1003d6.js"></script>
+<svg width="960" height="500">
+</svg>
+<script>
+const svg = d3.select('svg');
+//svg.attr('width', window.screen.width);
+const width = +svg.attr('width');
+const height = +svg.attr('height');
+const circle = svg.append('circle') 
+    .attr('r', 250)
+    .attr('cx', (width/2))
+    .attr('cy', (height/2))
+    .attr('fill', 'rgb(242, 223, 126)')
+    .attr('stroke', 'black');
+
+const eyeSpacing = 100;
+const eyeYOffset = -70;
+
+const leftEye = svg.append('circle') 
+    .attr('r', 30)
+    .attr('cx', (width/2) - eyeSpacing)
+    .attr('cy', (height/2) + eyeYOffset)
+    .attr('fill', 'black')
+    .attr('stroke', 'black');
+
+const rightEye = svg.append('circle') 
+    .attr('r', 30)
+    .attr('cx', (width/2) + eyeSpacing)
+    .attr('cy', (height/2) + eyeYOffset)
+    .attr('fill', 'black')
+    .attr('stroke', 'black');
+
+const g = svg.append('g')
+    .attr('transform', `translate(${width / 2}, ${height/2})`);
+
+const mouth = g.append('path')
+    .attr('d', d3.arc()({
+        innerRadius: 150,
+        outerRadius: 170,
+        startAngle: Math.PI / 2,
+        endAngle: Math.PI * 3 / 2
+}));
+</script>
+
+	<p style="margin-top: 1cm; margin-bottom: 1cm;">
+    My website is still under construction. In the meantime, here is a smiley face I made with D3.js. 
 	</p>
+    <!--<script src="https://gist.github.com/cao826/98c86b18c661baf05a86fbae9b1003d6.js"></script>-->
