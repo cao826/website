@@ -1,14 +1,15 @@
-I":<h2 id="disclaimer-this-is-a-dummy-post">Disclaimer: This is a dummy post</h2>
+I"K<h2 id="disclaimer-this-is-a-dummy-post">Disclaimer: This is a dummy post</h2>
 
 <p>The following is an excerpt from my Statistics homework:</p>
 
-<p>We want to find
-\( \mathbb{P} \big (\sin ( X ) \in [0, \frac{1}{1000}]\big) \)
-, which we can re-write as</p>
-
-\[\mathbb{P} \left ( 0 \leq \sin ( X ) \leq \frac{1}{1000} \right)
+<p>We want to find</p>
+<p>
+\\( \mathbb{P} \big (\sin ( X ) \in [0, \frac{1}{1000}]\big) \\)
+, which we can re-write as
+</p>
+<p>\(\mathbb{P} \left ( 0 \leq \sin ( X ) \leq \frac{1}{1000} \right)
     =
-\int_{0}^{\frac{1}{1000}} f_{\sin(X)}(\tau ) \, d\tau.\]
+\int_{0}^{\frac{1}{1000}} f_{\sin(X)}(\tau ) \, d\tau.\)</p>
 
 <p>So it will suffice to find the pdf of our new random variable and perform the integration above. Denote \( \sin ( X ) = Y \) and note that on the set
 \( [0, \frac{1}{1000}] \),
