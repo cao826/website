@@ -14,7 +14,6 @@ The following is an excerpt from my Statistics homework:
 We want to find
 \\( \mathbb{P} \big (\sin ( X ) \in [0, \frac{1}{1000}]\big) \\)
 , which we can re-write as
-
 $$
 \mathbb{P} \left ( 0 \leq \sin ( X ) \leq \frac{1}{1000} \right)
     =
