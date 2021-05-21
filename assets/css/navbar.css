@@ -73,6 +73,7 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 9999;
     }
 
     .nav-links li{
@@ -110,4 +111,17 @@ nav{
 
  .toggle .line3{
      transform: rotate(45deg) translate(-5px,-6px);
+ }
+
+ footer{
+    background-color: #F2F2F2;
+ }
+
+ footer ul {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ footer ul li {
+     list-style: none;
  }
