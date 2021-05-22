@@ -5,12 +5,42 @@
     color: #3E3E3E;
 }
 
+h1{
+    font-size: 48.83px;
+    line-height: 1;
+}
+
+h2{
+    font-size: 39.06px;
+    line-height: 1;
+}
+
+h3{
+    font-size: 31.25px;
+    line-height: 1;
+}
+
+h4{
+    font-size: 25px;
+    line-height: 1;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 1;
+}
+
 .content{
     min-height: calc(100vh - 80px)
 }
 
+.content p{
+    line-height: 1.35;
+}
+
 nav{
     display:  flex;
+    line-height: 1;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
@@ -119,6 +149,7 @@ nav{
 
  footer{
     background-color: #F2F2F2;
+    line-height: 1;
     text-align:center;
     height: 60px;
     margin-top: 20px;
