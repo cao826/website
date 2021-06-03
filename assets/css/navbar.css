@@ -13,6 +13,7 @@ h1{
 h2{
     font-size: 39.06px;
     line-height: 1;
+    text-align: center;
 }
 
 h3{
@@ -30,12 +31,17 @@ h5{
     line-height: 1;
 }
 
-.content{
-    min-height: calc(100vh - 80px)
+.page-wrapper{
+    min-height: calc(100vh - 80px);
 }
 
-.content p{
+.page-wrapper p{
     line-height: 1.35;
+}
+
+.nav-extend{
+    width: 100%;
+    background-color: #F2F2F2;
 }
 
 nav{
@@ -45,8 +51,10 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #F2F2F2;
+    width: 100%;
+    max-width: 925px;
+    margin: 0 auto;
 }
-
 
 .logo{
     text-transform: uppercase;
@@ -80,6 +88,12 @@ nav{
     background-color: #3E3E3E;
     margin: 5px;
     transition: all 0.3s ease;
+ }
+
+ .content{
+     width: 80%;
+     margin: 0 auto;
+     max-width: 750px;
  }
 
  @media screen and (max-width:1024px){
@@ -117,6 +131,10 @@ nav{
     .burger{
         display: block;
         cursor: pointer;
+    }
+
+    .content{
+        width: 90%;
     }
 
  }

@@ -6,7 +6,7 @@ layout: default
 title: Homepage
 ---
 
-Will this work?`
+## Is this too large for a title?
 
 
 The following is an excerpt from my Statistics homework:
