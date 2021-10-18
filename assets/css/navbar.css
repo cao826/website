@@ -100,12 +100,24 @@ nav{
 
  .content p{
      font-family: 'Cardo', serif;
+     margin-bottom: 15px;
  }
 
  .content h2{
      font-family: 'Raleway', sans-serif;
      margin-bottom: 25px;
      margin-top: 25px;
+ }
+
+ .end-of-post-buttons{
+     text-align:center;
+     margin: auto;
+     width:50%;
+ }
+
+ .end-of-post-buttons button{
+     margin:auto;
+     font-family: 'Cutive Mono', monospace;
  }
 
  @media screen and (max-width:1024px){
