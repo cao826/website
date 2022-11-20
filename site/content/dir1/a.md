@@ -7,7 +7,7 @@ draft: true
 <div id="div">
 <svg width="900" height="640"></svg>
 <script>
-   const svg = d3.select("#div")
+   const svg = d3.select("svg")
                  .append("svg")
                  .attr("width", "550")
                  .attr("height", "100")
