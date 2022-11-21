@@ -3,25 +3,18 @@ title: "A"
 date: 2022-11-20T06:48:35-08:00
 draft: true
 ---
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.js"></script>
 <div id="div">
-<svg width="900" height="640"></svg>
+Here is some text
+<svg width="100" height="100"></svg>
 <script>
-   const svg = d3.select("svg")
-                 .append("svg")
-                 .attr("width", "550")
-                 .attr("height", "100")
-                 .style("background-color", "lightblue")
-                 .attr("id", "demo1")
-
-   let rect = d3.select("#demo1")
-                .append("rect")
-                .attr("x", "200")
-                .attr("y", "20")
-                .attr("width", "100")
-                .attr("height", "70")
-                .attr("fill", "orange")
-                .attr("stroke", "blue")
-                .attr("stroke-width", "3px")
+console.log('Hello world');
+const svg = d3.select('svg');
+svg
+  .append('circle')
+  .attr('cx', '50%')
+  .attr('cy', '50%')
+  .attr('r', 20)
+  .style('fill', 'green');
 </script>
 </div>
