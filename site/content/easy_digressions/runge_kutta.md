@@ -21,3 +21,19 @@ $$
  &= e * m * m 
 \end{align}
 $$
+
+## Introduction
+
+I imagined a world where all I ever worked with was python. And it was so... boring. 
+I also just thought it would be fun to try a whole bunch of programming languages so here we are
+
+## The Runge-Kutta Method
+
+Runge Kutta is a method for solving a problem: finding a solution to a first order differential equation of the form
+$$
+\frac{dy}{dt} = \dot{y} = f ( y , t ).
+$$
+
+It works by estimating the fuction at some \\(t_0 + h \\) with a weighted average of samples \\(k_i\\) specified as such: 
+
+* \\( k_1 = f(y^*(t_0) , t_0) \\)
