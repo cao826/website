@@ -34,6 +34,36 @@ $$
 \frac{dy}{dt} = \dot{y} = f ( y , t ).
 $$
 
-It works by estimating the fuction at some \\(t_0 + h \\) with a weighted average of samples \\(k_i\\) specified as such: 
+It works by computing four different estimates for the slope, \\(\\{k_i\\}\\) where
 
-* \\( k_1 = f(y^*(t_0) , t_0) \\)
+$$
+\\begin{align}
+k_1 &= f(\hat{y}(t_0) , t_0) \\\
+k_2 &= f\\left (\hat{y}(t_0) + \frac{k_1 h}{2} , t_o + \frac{h}{2} \\right)\\\
+k_3 &= f\\left (\hat{y}(t_0) + \frac{k_2 h}{2} , t_o + \frac{h}{2} \\right)\\\
+k_4 &= f\\left (\hat{y}(t_0) + k_3 h , t_o + h \\right)
+\\end{align}
+$$
+
+which we use to approximate the solution at \\(t_0 + h \\) for some presumably small \\( h \\) as
+$$
+\hat{y} ( t_0 + h ) = \hat{y} (t_0) + h \\left (\frac{k_1 + 2k_2 + 2k_3 + k4}{6} \\right )
+$$
+
+Runge Kutta really served as a simple but not trivial algorithm to implement, just to get a flavor of how to compute in each of the languages. 
+If you want more information about Runge-Kutta from a conceptual standpoint, consults x,y,z.
+
+## Python version
+
+I started with python becuase I know python the best. 
+It also allowed me to think about just the design pattern instead of how to get the language to do what I need it to.
+
+Here is the first design pattern I wrote. 
+It should be pretty easy to convince yourself that it is not a very good design.
+```python
+
+for i in range(24):
+    print(i)
+
+```
+<script src="https://gist.github.com/cao826/b8407ae2a4ec6f5776194b9bf1af7a8f.js"></script>
